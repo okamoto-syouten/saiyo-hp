@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>岡本商店の採用情報｜山口県柳井市・精肉加工スタッフ募集</title>
+<meta name="description" content="有限会社岡本商店(山口県柳井市・ゆめタウン柳井店内)の採用ページ。未経験歓迎の精肉加工スタッフを募集中。口福を通じて、幸福を生み出す仲間をお待ちしています。">
+
+<!-- ============================================================
+  ■ 更新するときはここを見てください(総務用メモ)■
+  1. 応募フォームのURLを変える → 下の <script> 内 ENTRY_FORM_URL を書き換え(1か所だけ)
+  2. 給与・休日などの条件を変える → 「募集要項」セクション(検索: id="recruitment")
+  3. FAQを追加する → <details class="faq-item"> のブロックをコピーして増やす
+  4. 問い合わせ先メール → CONTACT_EMAIL を書き換え(1か所だけ)
+  変更したら、このファイルをホスティング先(GitHub等)にアップロードし直すだけで反映されます。
+============================================================ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --sumi:#2A2422;        /* 本文の墨色 */
+  --kinari:#FAF7F1;      /* 生成りの背景 */
+  --enji:#8E3B46;        /* 暖簾のえんじ */
+  --enji-dark:#6E2C35;
+  --sashi:#F1E6E3;       /* 霜降りを思わせる淡色 */
+  --karashi:#B98A2F;     /* 値札の金茶 */
+  --line:#E2D9CE;
+  --serif:"Shippori Mincho","Hiragino Mincho ProN",serif;
+  --sans:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:var(--sans);color:var(--sumi);background:var(--kinari);line-height:1.9;font-size:16px}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--enji)}
+
+/* ---------- ヘッダー ---------- */
+header{position:sticky;top:0;z-index:50;background:rgba(250,247,241,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.header-in{max-width:1080px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:20px}
+.brand{font-family:var(--serif);font-weight:700;font-size:1.15rem;text-decoration:none;color:var(--sumi);letter-spacing:.08em}
+.brand small{display:block;font-size:.6rem;color:var(--enji);letter-spacing:.3em;font-family:var(--sans)}
+nav{margin-left:auto;display:flex;gap:18px;align-items:center}
+nav a{text-decoration:none;color:var(--sumi);font-size:.85rem;letter-spacing:.05em}
+nav a:hover{color:var(--enji)}
+.nav-links{display:flex;gap:18px}
+.btn{display:inline-block;text-decoration:none;font-weight:700;letter-spacing:.1em;text-align:center;border-radius:3px;transition:opacity .2s}
+.btn:hover{opacity:.85}
+.btn-entry{background:var(--enji);color:#fff;padding:10px 26px;font-size:.9rem}
+.btn-ghost{border:1.5px solid var(--sumi);color:var(--sumi);padding:9px 22px;font-size:.85rem}
+.menu-toggle{display:none;background:none;border:1px solid var(--line);border-radius:3px;padding:6px 10px;font-size:.8rem;font-family:var(--sans);cursor:pointer;color:var(--sumi)}
+
+/* ---------- ヒーロー ---------- */
+.hero{position:relative;min-height:82vh;display:flex;align-items:stretch;justify-content:center;overflow:hidden;
+  background:
+    linear-gradient(rgba(250,247,241,.55), rgba(250,247,241,.9)),
+    repeating-linear-gradient(90deg, transparent 0 118px, rgba(142,59,70,.06) 118px 120px),
+    var(--kinari);}
+.hero-in{max-width:1080px;width:100%;margin:0 auto;padding:70px 20px;display:flex;gap:48px;justify-content:center;align-items:center}
+.hero-copy{writing-mode:vertical-rl;font-family:var(--serif);font-weight:600;border-right:3px solid var(--enji);padding-right:24px}
+.hero-copy .line{display:block;white-space:nowrap;font-size:clamp(1.55rem,4vw,2.5rem);letter-spacing:.22em;line-height:1.75}
+.hero-copy .sub{display:block;white-space:nowrap;font-size:clamp(.9rem,2vw,1.1rem);letter-spacing:.24em;line-height:2.4;color:var(--enji-dark);margin-top:14px}
+.hero-side{max-width:380px}
+.hero-side .tag{display:inline-block;background:var(--enji);color:#fff;font-size:.75rem;letter-spacing:.25em;padding:4px 14px;margin-bottom:14px}
+.hero-side p{font-size:.95rem;margin-bottom:22px}
+.hero-side .since{font-family:var(--serif);color:var(--karashi);letter-spacing:.2em;font-size:.8rem;margin-top:18px}
+
+/* ---------- 共通セクション ---------- */
+section{padding:78px 20px}
+.wrap{max-width:920px;margin:0 auto}
+.fuda{display:inline-block;background:#fff;border:1px solid var(--line);border-top:5px solid var(--enji);
+  font-family:var(--serif);font-weight:600;letter-spacing:.18em;font-size:1.05rem;padding:10px 26px 8px;box-shadow:0 2px 6px rgba(42,36,34,.06)}
+.sec-head{margin-bottom:38px}
+.sec-head .en{display:block;font-size:.7rem;letter-spacing:.35em;color:var(--karashi);margin-top:10px}
+h3{font-family:var(--serif);font-size:1.25rem;letter-spacing:.08em;margin:34px 0 14px;padding-left:14px;border-left:4px solid var(--enji)}
+.alt{background:var(--sashi)}
+.lead-strong{font-family:var(--serif);font-size:clamp(1.3rem,3vw,1.7rem);letter-spacing:.1em;margin-bottom:20px}
+
+/* ---------- FAQ ---------- */
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:4px;margin-bottom:12px}
+.faq-item summary{cursor:pointer;list-style:none;display:flex;gap:14px;align-items:baseline;padding:16px 20px;font-weight:700;font-size:.95rem}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::before{content:"Q";font-family:var(--serif);color:var(--enji);font-size:1.15rem;flex-shrink:0}
+.faq-item summary::after{content:"＋";margin-left:auto;color:var(--karashi);flex-shrink:0}
+.faq-item[open] summary::after{content:"－"}
+.faq-a{padding:0 20px 18px 48px;font-size:.92rem;color:#4a423f}
+
+/* ---------- 表(募集要項・会社概要) ---------- */
+.spec{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line)}
+.spec th,.spec td{padding:16px 18px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left;font-size:.93rem}
+.spec th{width:9em;background:var(--sashi);font-family:var(--serif);font-weight:600;letter-spacing:.1em;white-space:nowrap}
+.spec td .note{font-size:.83rem;color:#6b625e}
+.salary{font-family:var(--serif);font-size:1.25rem;color:var(--enji)}
+
+/* ---------- 採用フロー ---------- */
+.flow{counter-reset:step;list-style:none}
+.flow li{counter-increment:step;position:relative;background:#fff;border:1px solid var(--line);border-radius:4px;padding:18px 20px 18px 66px;margin-bottom:14px}
+.flow li::before{content:counter(step);position:absolute;left:18px;top:16px;width:32px;height:32px;border-radius:50%;
+  background:var(--enji);color:#fff;font-family:var(--serif);display:flex;align-items:center;justify-content:center;font-size:1rem}
+.flow li b{display:block;margin-bottom:4px;letter-spacing:.05em}
+.flow li p{font-size:.9rem;color:#4a423f}
+
+/* ---------- リスト ---------- */
+.check{list-style:none}
+.check li{padding-left:1.5em;text-indent:-1.5em;font-size:.93rem;margin-bottom:6px}
+.check li::before{content:"◇ ";color:var(--enji)}
+
+/* ---------- CTA ---------- */
+.cta{background:var(--enji-dark);color:#fff;text-align:center}
+.cta .lead-strong{color:#fff}
+.cta p{max-width:560px;margin:0 auto 28px;font-size:.95rem}
+.cta .btn-entry{background:#fff;color:var(--enji-dark);font-size:1.05rem;padding:16px 56px}
+.cta .mail{margin-top:22px;font-size:.85rem}
+.cta .mail a{color:#F3D9A4}
+
+/* ---------- フッター ---------- */
+footer{background:var(--sumi);color:#CFC7BF;text-align:center;padding:28px 20px;font-size:.78rem;letter-spacing:.1em}
+
+/* ---------- スマホ対応 ---------- */
+@media (max-width:760px){
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--kinari);border-bottom:1px solid var(--line);
+    flex-direction:column;gap:0;padding:8px 0}
+  .nav-links.open{display:flex}
+  .nav-links a{padding:12px 24px;border-top:1px solid var(--line)}
+  .menu-toggle{display:block}
+  .btn-ghost{display:none}
+  .hero-in{flex-direction:row-reverse;gap:24px;padding:48px 20px}
+  .hero-copy{padding-right:14px}
+  section{padding:56px 16px}
+  .spec th{width:6.5em;white-space:normal}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-in">
+    <a class="brand" href="#top">有限会社 岡本商店<small>RECRUIT SITE</small></a>
+    <nav>
+      <button class="menu-toggle" onclick="document.getElementById('navlinks').classList.toggle('open')">メニュー</button>
+      <div class="nav-links" id="navlinks">
+        <a href="#info">採用情報</a>
+        <a href="#work">仕事内容/FAQ</a>
+        <a href="#training">研修・評価制度</a>
+        <a href="#recruitment">募集要項</a>
+        <a href="#corporate">会社概要</a>
+      </div>
+      <a class="btn btn-ghost" href="#contact">お問い合わせ</a>
+      <a class="btn btn-entry js-entry" href="#contact">応募する</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ヒーロー -->
+<div class="hero" id="top">
+  <div class="hero-in">
+    <div class="hero-copy">
+      <span class="line">口福を通じて、</span>
+      <span class="line">幸福を生み出す</span>
+      <span class="sub">誰もが成長できる会社へ。</span>
+    </div>
+    <div class="hero-side">
+      <span class="tag">STAFF RECRUIT</span>
+      <p>岡本商店は、誰にとっても働きやすい会社であることをめざし、職場環境や給与体系の改革に取り組んでいます。私たちと一緒に成長して、人や社会への貢献をめざしませんか。</p>
+      <a class="btn btn-entry js-entry" href="#contact">応募する</a>
+      <div class="since">SINCE 1975 ｜ 山口県柳井市</div>
+    </div>
+  </div>
+</div>
+
+<!-- 採用情報 -->
+<section id="info">
+  <div class="wrap">
+    <div class="sec-head"><span class="fuda">採用情報</span><span class="en">MESSAGE</span></div>
+    <p class="lead-strong">誰もが成長できる会社へ。</p>
+    <p>岡本商店は、誰にとっても働きやすい会社であることをめざし、職場環境や給与体系の改革に取り組んでいます。<br>
+    また、どんな職場でも重宝される優秀な人材を育てるため、段階的に力を身につけていける教育制度を整えています。<br>
+    私たちと一緒に成長して、人や社会への貢献をめざしませんか。</p>
+  </div>
+</section>
+
+<!-- 仕事内容 / FAQ -->
+<section class="alt" id="work">
+  <div class="wrap">
+    <div class="sec-head"><span class="fuda">仕事内容 / FAQ</span><span class="en">WORK &amp; FAQ</span></div>
+
+    <h3>仕事内容(一例)</h3>
+    <p>あなたにお任せするのは、牛肉や豚肉、鶏肉の精肉加工です。品出し・陳列やパック詰めなどからスタートして、サイズの小さい鶏肉の加工、業務に慣れてくれば大きなブロックの牛肉や豚肉の加工をお任せしていきます。</p>
+
+    <h3>面接・応募について</h3>
+    <details class="faq-item"><summary>精肉加工の経験がなくても応募できますか?</summary>
+      <div class="faq-a">ほとんどの社員が未経験から始めていますので、問題ありません。段階を踏んで業務を覚えていただき、周りのメンバーもサポートします。</div></details>
+    <details class="faq-item"><summary>実際の勤務場所を見学することはできますか?</summary>
+      <div class="faq-a">はい、可能です。希望があれば面接の前に見学していただくことができます。</div></details>
+    <details class="faq-item"><summary>面接はどこで行われますか?</summary>
+      <div class="faq-a">店舗で行います。</div></details>
+    <details class="faq-item"><summary>応募から合否が出るまでの期間を教えてください</summary>
+      <div class="faq-a">2週間程度です。</div></details>
+
+    <h3>仕事について</h3>
+    <details class="faq-item"><summary>仕事内容を教えてください。</summary>
+      <div class="faq-a">品出し・陳列やパック詰めなどからスタートして、サイズの小さい鶏肉の加工、業務に慣れてくれば大きなブロックの牛肉や豚肉の加工をお任せしていきます。</div></details>
+    <details class="faq-item"><summary>週何日、1日何時間からの勤務が可能ですか?</summary>
+      <div class="faq-a">週3日から、1日4時間からの勤務が可能です。条件面談時にご相談ください。</div></details>
+    <details class="faq-item"><summary>髪型や服装のルールはありますか?</summary>
+      <div class="faq-a">髪型や髪の色についてのルールはありませんが、作業時に髪がすべて納まるよう帽子をかぶっていただきます。食品を扱うため、付け爪・ネイルは禁じられています。また、作業時はアクセサリー類をすべて外していただきます。</div></details>
+    <details class="faq-item"><summary>勤務に際して、自分で用意するものはありますか?</summary>
+      <div class="faq-a">支給の制服(上衣、ズボン、エプロン、長靴)があります。私服で出勤し、更衣室で着替えていただきます。</div></details>
+    <details class="faq-item"><summary>子どもが小さいのですが、大丈夫ですか?</summary>
+      <div class="faq-a">岡本商店では、小さいお子さんがいらっしゃる社員も活躍中です。お子さんの体調不良などで急な早退があってもフォローしあっています。</div></details>
+  </div>
+</section>
+
+<!-- 研修・評価制度 -->
+<section id="training">
+  <div class="wrap">
+    <div class="sec-head"><span class="fuda">研修・評価制度</span><span class="en">TRAINING &amp; EVALUATION</span></div>
+
+    <h3>研修について</h3>
+    <p>精肉店勤務の経験がなくても大丈夫です。未経験でも安心して業務を学び、知識を身に付けることができます。段階的な目標設定があり、ゲーム感覚でひとつずつクリアしていく楽しさがあります。わからないことがあれば、先輩が丁寧にアドバイスしながら、成長をサポートします。</p>
+
+    <h3>"識学"について</h3>
+    <p>識学とは、組織運営における『誤解』と『錯覚』を排除し、組織の成長を最大化するための考え方です。認識のズレを整え、コミュニケーションロスをなくし、迷いなく目的に向かうための理論です。当社では"識学"という共通言語を学ぶための研修制度(動画学習・オンラインサーベイ)を設けています。</p>
+
+    <h3>定量評価:結果主義</h3>
+    <p>岡本商店では識学の考えを取り入れ、役割・責任を数値化・指標化し、その達成度に基づき評価を行う「結果主義」の評価制度を採用しています。四半期ごとに行われる評価は、昇給・賞与に反映されます。</p>
+
+    <h3>定性評価:ルールの遵守</h3>
+    <p>日常業務における判断の迷いをなくすことで、業務効率化を高めることを目的として、社員として必要なルールを定めています。ルールの遵守は岡本商店で大事にしている価値観であり、その遵守状況は、評価の判断基準としてのひとつの要素になっています。</p>
+
+    <h3>評価スケジュール</h3>
+    <p>評価はクォーターごとに行います。賞与は4月と10月の2回、定期の昇給は5月と11月の2回です。</p>
+  </div>
+</section>
+
+<!-- 募集要項 -->
+<section class="alt" id="recruitment">
+  <div class="wrap">
+    <div class="sec-head"><span class="fuda">募集要項</span><span class="en">RECRUITMENT</span></div>
+
+    <table class="spec">
+      <tr><th>仕事内容</th><td>牛肉・豚肉・鶏肉の精肉加工。納品された肉を袋から取り出して加工し、販売できるようトレイに詰めます。はじめはサイズの小さい鶏肉の加工からスタートし、慣れてきた段階で大きなブロックの牛肉や豚肉の加工をお任せします。<span class="note"><br>ほとんどが未経験で入った社員のため、業務の中で感じる「不安」や「疑問」は必ず経験してきています。分かっていないまま放置することはありませんので、安心してください。</span></td></tr>
+      <tr><th>勤務地</th><td>山口県柳井市南町4-5-3 ゆめタウン柳井店1階精肉</td></tr>
+      <tr><th>勤務時間</th><td>シフト制 8:00~17:00(実働8時間)<span class="note"><br>※平均残業時間:6時間/月<br>※当番制で~21時まで残業していただくことがあります(週1~2回程度)</span></td></tr>
+      <tr><th>給与</th><td><span class="salary">月給 200,000円 ~ 400,000円</span><span class="note"><br>※想定年収 2,810,000円~</span><br>昇給/あり 賞与/年2回</td></tr>
+      <tr><th>休日休暇</th><td>年間休日107日<br>完全週休2日制(曜日はご相談ください)</td></tr>
+      <tr><th>応募資格</th><td>&lt;必須条件&gt;<br>・普通自動車免許(オートマ限定OK)<span class="note"><br>※駅が遠く通勤に車やバイクを使用していただきたいため。自転車など違う通勤手段があれば応募時にご相談ください。</span><br><br>&lt;歓迎条件&gt;<br>・精肉加工の経験がある方<br>・家庭や飲食店での調理経験がある方</td></tr>
+    </table>
+
+    <h3>スキルが給与に直結する昇格制度</h3>
+    <p>扱う肉や作業の難易度によって点数を決め、技術の向上を評価して給与を設定しています。一覧表を社員全員に共有しているため、上司の気分や社内の派閥によって評価が左右されることはありません。自分のスキルが上がれば上がるほど、給与が向上していきます。</p>
+
+    <h3>福利厚生</h3>
+    <ul class="check">
+      <li>交通費支給あり</li>
+      <li>雇用保険・労災保険・厚生年金・健康保険</li>
+      <li>子ども・子育て拠出金</li>
+      <li>制服無料貸与(帽子、ポロシャツ、ズボン、長靴)</li>
+      <li>インフルエンザの予防接種は会社負担</li>
+      <li>従業員割引制度(社員証の提示で、ゆめタウン柳井の店舗一部サービス)</li>
+    </ul>
+    <p class="note" style="font-size:.85rem;color:#6b625e">★ゆめタウン柳井店でのテナント営業の関係で、飲食店をはじめメガネ販売店やマッサージ店など、ゆめタウン内の一部店舗で社員割引が適用されます。(対象店舗は予告なしに変更になる場合がございます。)</p>
+
+    <h3>採用フロー</h3>
+    <ol class="flow">
+      <li><b>「応募する」ボタンからエントリー</b><p>応募フォームに進み、氏名や連絡先などを入力・送信してください。</p></li>
+      <li><b>履歴書の提出・書類選考</b><p>受付メールに記載の宛先へ、写真付き履歴書(PDFや画像)をお送りください。履歴書をもとに選考を行い、3営業日以内に結果をご連絡します。</p></li>
+      <li><b>職場見学(希望者のみ)</b><p>ご希望の方には、事前に職場をご案内します(面接と同日も可)。</p></li>
+      <li><b>面接(1回)</b><p>担当者との面接を実施します。所要時間は30分~1時間程度です。</p></li>
+      <li><b>採用</b><p>面接後3日以内に、採否をご連絡いたします。</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 会社概要 -->
+<section id="corporate">
+  <div class="wrap">
+    <div class="sec-head"><span class="fuda">会社概要</span><span class="en">COMPANY</span></div>
+    <table class="spec">
+      <tr><th>会社名</th><td>有限会社 岡本商店</td></tr>
+      <tr><th>事業内容</th><td>精肉小売 販売・加工</td></tr>
+      <tr><th>住所</th><td>山口県柳井市南町4-5-3 ゆめタウン柳井店1階精肉</td></tr>
+      <tr><th>従業員数</th><td>9名</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contact">
+  <p class="lead-strong">私たちと一緒に、成長しませんか。</p>
+  <p>応募は下のボタンから。「話を聞いてみたい」「見学だけしたい」というご相談も歓迎です。</p>
+  <a class="btn btn-entry js-entry" href="#contact">応募する</a>
+  <p class="mail">お問い合わせ:<a href="mailto:okamoto.syouten1975@gmail.com">okamoto.syouten1975@gmail.com</a></p>
+</section>
+
+<footer>© 1975-2026 有限会社岡本商店</footer>
+
+<script>
+/* ============================================================
+  ■ 設定はここだけ触ればOK ■
+  ENTRY_FORM_URL : Googleフォーム(応募フォーム)のURLに差し替えてください
+  CONTACT_EMAIL  : 問い合わせ受付メールアドレス
+============================================================ */
+const ENTRY_FORM_URL = "";  // 例: "https://forms.gle/xxxxxxxxxxxx"
+const CONTACT_EMAIL  = "okamoto.syouten1975@gmail.com";
+
+/* 「応募する」ボタン全部にフォームURLを反映(URL未設定の間はメール応募に切替) */
+document.querySelectorAll(".js-entry").forEach(function(a){
+  if(ENTRY_FORM_URL){
+    a.href = ENTRY_FORM_URL;
+    a.target = "_blank";
+    a.rel = "noopener";
+  }else{
+    a.href = "mailto:" + CONTACT_EMAIL + "?subject=" + encodeURIComponent("【応募】採用ページを見て") +
+      "&body=" + encodeURIComponent("お名前:\n電話番号:\n希望連絡時間帯:\n(履歴書は選考のご案内後にお送りください)");
+  }
+});
+</script>
+</body>
+</html>
