@@ -48,7 +48,9 @@ a{color:var(--enji)}
 /* ---------- ヘッダー ---------- */
 header{position:sticky;top:0;z-index:50;background:rgba(250,247,241,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
 .header-in{max-width:1080px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:20px}
-.brand{font-family:var(--serif);font-weight:700;font-size:1.15rem;text-decoration:none;color:var(--sumi);letter-spacing:.08em}
+.brand{display:flex;flex-direction:column;gap:2px;text-decoration:none;color:var(--sumi)}
+.brand img{height:38px;width:auto;display:block}
+@media (max-width:760px){.brand img{height:30px}}
 .brand small{display:block;font-size:.6rem;color:var(--enji);letter-spacing:.3em;font-family:var(--sans)}
 nav{margin-left:auto;display:flex;gap:18px;align-items:center}
 nav a{text-decoration:none;color:var(--sumi);font-size:.85rem;letter-spacing:.05em}
@@ -146,7 +148,7 @@ footer{background:var(--sumi);color:#CFC7BF;text-align:center;padding:28px 20px;
 
 <header>
   <div class="header-in">
-    <a class="brand" href="#top">有限会社 岡本商店<small>RECRUIT SITE</small></a>
+<a class="brand" href="#top"><img src="logo.png.png" alt="肉のおかもと"><small>有限会社岡本商店 ｜ RECRUIT</small></a>
     <nav>
       <button class="menu-toggle" onclick="document.getElementById('navlinks').classList.toggle('open')">メニュー</button>
       <div class="nav-links" id="navlinks">
